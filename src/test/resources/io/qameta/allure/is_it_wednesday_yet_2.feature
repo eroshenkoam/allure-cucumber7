@@ -1,18 +1,12 @@
-Feature: Is it Wednesday yet?
-  Everybody wants to know when it's Friday
+Feature: Is it ploskiy json?
+  Everybody wants to know where we can find ploskiy json
 
-  Scenario: Wednesday isn't Friday
-    Given today is Sunday
-    When I ask whether it's Friday yet i need to add ploskiy JSON
-      | actionType                          | ANALYZE                                    |
-      | Канал                               | ISSUER                                     |
-      | Подканал                            | ISSUER~ISSUER                              |
-      | Тип                                 | PAYMENT                                    |
-      | Подтип                              | PAYMENT~ATM_PAYMENT                        |
-      | Описание события                    | 680 Покупка через ePOS – терминал Purchase |
-      | Идентификатор клиентской транзакции | Случайный карточный TRANSACTION_ID         |
-      | Номер карты клиента                 | #{CARD}                                    |
-      | Сумма платежа                       | 800                                        |
-      | BIN карты клиента                   | 548220                                     |
-      | Владелец карты                      | AT-T1727                                   |
-    Then I should be told "Nope"
+  Scenario: There is a problem
+    Given There is a question
+    When I need to add ploskiy JSON
+      | string1 | value1  |
+      | string2 | value2  |
+      | string3 | value3  |
+      | string4 | value4  |
+
+    Then I should be told "Ha-ha"
