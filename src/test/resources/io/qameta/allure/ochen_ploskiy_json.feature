@@ -4,7 +4,7 @@ Feature: Is it ploskiy json?
   Scenario: There is a problem
     Given There is a question
     When I need to add ploskiy JSON
-      | string1 | value1  |
+      | key     | value  |
       | string2 | value2  |
       | string3 | value3  |
       | string4 | value4  |

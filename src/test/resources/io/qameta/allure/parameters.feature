@@ -1,5 +1,5 @@
 Feature: Parameters?
-  Everybody wants to know when it's Friday
+  Everybody wants to know how to add parameters
 
   @allure.id=282733
   Scenario Outline: print string <str>

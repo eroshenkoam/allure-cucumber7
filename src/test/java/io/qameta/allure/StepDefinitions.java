@@ -1,5 +1,6 @@
 package io.qameta.allure;
 
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -22,7 +23,7 @@ public class StepDefinitions {
     }
 
     @When("I need to add ploskiy JSON")
-    public void ploskiyJson() {
+    public void ploskiyJson(DataTable table) {
     }
 
     @Then("I should be told {string}")
